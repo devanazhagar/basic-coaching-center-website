@@ -13,7 +13,7 @@ import { Star } from "lucide-react";
 
 export default function Testimonials() {
   return (
-    <section className="bg-card py-20 sm:py-24">
+    <section className="py-20 sm:py-24">
       <div className="container">
         <div className="text-center">
           <h2 className="font-headline text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
@@ -36,7 +36,7 @@ export default function Testimonials() {
               return (
                 <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
                   <div className="p-4 h-full">
-                    <Card className="h-full shadow-lg transition-all duration-300 hover:shadow-2xl hover:scale-105">
+                    <Card className="h-full shadow-lg transition-all duration-300 hover:shadow-2xl hover:scale-105 bg-card/80 backdrop-blur-sm">
                       <CardContent className="flex h-full flex-col items-center justify-center p-6 text-center">
                         {image && (
                           <Image
