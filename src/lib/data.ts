@@ -1,0 +1,97 @@
+export const courses = [
+  {
+    id: 'mathematics',
+    title: 'Advanced Mathematics',
+    description: 'Master calculus, algebra, and geometry with our expert tutors.',
+    image: 'course-math',
+    grade: '10-12',
+    subject: 'Math',
+    curriculum: ['Calculus I & II', 'Linear Algebra', 'Differential Equations', 'Statistics'],
+    duration: '12 weeks',
+    fees: '$500',
+  },
+  {
+    id: 'physics',
+    title: 'AP Physics',
+    description: 'Explore the laws of the universe, from classical mechanics to modern physics.',
+    image: 'course-science',
+    grade: '11-12',
+    subject: 'Science',
+    curriculum: ['Kinematics', 'Dynamics', 'Thermodynamics', 'Electromagnetism'],
+    duration: '10 weeks',
+    fees: '$450',
+  },
+  {
+    id: 'literature',
+    title: 'English Literature',
+    description: 'Dive deep into classic and contemporary literature, improving your analytical skills.',
+    image: 'course-english',
+    grade: '9-12',
+    subject: 'English',
+    curriculum: ['Shakespearean Plays', '19th Century Novels', 'Modernist Poetry', 'Creative Writing'],
+    duration: '12 weeks',
+    fees: '$400',
+  },
+  {
+    id: 'world-history',
+    title: 'World History',
+    description: 'Journey through time and discover the events that shaped our world.',
+    image: 'course-history',
+    grade: '9-11',
+    subject: 'History',
+    curriculum: ['Ancient Civilizations', 'The Middle Ages', 'The Renaissance', 'Modern History'],
+    duration: '10 weeks',
+    fees: '$350',
+  },
+];
+
+export const faculty = [
+  {
+    name: 'Dr. Evelyn Reed',
+    title: 'Head of Mathematics',
+    specialization: 'Calculus, Linear Algebra',
+    qualifications: 'Ph.D. in Mathematics',
+    image: 'faculty-1',
+    reviews: 45,
+    rating: 4.9,
+  },
+  {
+    name: 'Prof. Samuel Tan',
+    title: 'Lead Science Instructor',
+    specialization: 'Physics, Chemistry',
+    qualifications: 'M.S. in Physics Education',
+    image: 'faculty-2',
+    reviews: 38,
+    rating: 4.8,
+  },
+  {
+    name: 'Dr. Anita Desai',
+    title: 'English & History Chair',
+    specialization: 'Literature, World History',
+    qualifications: 'Ph.D. in English Literature',
+    image: 'faculty-3',
+    reviews: 52,
+    rating: 5.0,
+  },
+];
+
+export const testimonials = [
+  {
+    name: 'Jessica M.',
+    course: 'Advanced Mathematics',
+    text: 'Academify turned my fear of math into a passion. The tutors are incredibly patient and knowledgeable. I went from a C to an A+!',
+    image: 'testimonial-1',
+  },
+  {
+    name: 'David L.',
+    course: 'AP Physics',
+    text: 'The interactive lessons and hands-on approach in the physics course were game-changing. I finally understood complex concepts and aced my AP exam.',
+    image: 'testimonial-2',
+  },
+  {
+    name: 'Sarah K.',
+    course: 'English Literature',
+    text: 'I always loved reading, but Academify taught me how to analyze texts on a whole new level. My writing skills have improved dramatically.',
+    image: 'testimonial-3',
+  },
+];

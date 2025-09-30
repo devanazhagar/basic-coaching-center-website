@@ -1,3 +1,70 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero-student",
+      "description": "Student studying at a desk",
+      "imageUrl": "https://images.unsplash.com/photo-1514369118554-e20d93546b30?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzdHVkZW50JTIwc3R1ZHlpbmd8ZW58MHx8fHwxNzU5MTcyMjMyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "student studying"
+    },
+    {
+      "id": "course-math",
+      "description": "Mathematics chalkboard",
+      "imageUrl": "https://images.unsplash.com/photo-1758685733699-04d6544f2655?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxtYXRoZW1hdGljcyUyMGNoYWxrYm9hcmR8ZW58MHx8fHwxNzU5MTcyNDUzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "mathematics chalkboard"
+    },
+    {
+      "id": "course-science",
+      "description": "Science beakers and equipment",
+      "imageUrl": "https://images.unsplash.com/photo-1605781645799-c9c7d820b4ac?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxzY2llbmNlJTIwbGFib3JhdG9yeXxlbnwwfHx8fDE3NTkxNTY5MjR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "science laboratory"
+    },
+    {
+      "id": "course-english",
+      "description": "Stack of classic books",
+      "imageUrl": "https://images.unsplash.com/photo-1692742593559-8ffd0e3fd8b1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8Y2xhc3NpYyUyMGJvb2tzfGVufDB8fHx8MTc1OTExNzUwMXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "classic books"
+    },
+    {
+      "id": "course-history",
+      "description": "An old world map",
+      "imageUrl": "https://images.unsplash.com/photo-1712150177656-b3c0bd50eb25?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHx3b3JsZCUyMG1hcHxlbnwwfHx8fDE3NTkyMjMwNTh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "world map"
+    },
+    {
+      "id": "faculty-1",
+      "description": "Portrait of a female faculty member",
+      "imageUrl": "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx0ZWFjaGVyJTIwcG9ydHJhaXR8ZW58MHx8fHwxNzU5MTUxMTg1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "teacher portrait"
+    },
+    {
+      "id": "faculty-2",
+      "description": "Portrait of a male faculty member",
+      "imageUrl": "https://images.unsplash.com/photo-1687375634595-3d9a5e872b58?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8cHJvZmVzc29yJTIwcG9ydHJhaXR8ZW58MHx8fHwxNzU5MjA5MjA3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "professor portrait"
+    },
+    {
+      "id": "faculty-3",
+      "description": "Portrait of another female faculty member",
+      "imageUrl": "https://images.unsplash.com/photo-1758685848226-eedca8f6bce7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxlZHVjYXRvciUyMHBvcnRyYWl0fGVufDB8fHx8MTc1OTE3ODY4Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "educator portrait"
+    },
+    {
+      "id": "testimonial-1",
+      "description": "Portrait of a happy student",
+      "imageUrl": "https://images.unsplash.com/photo-1560439450-57df7ac6dbef?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxoYXBweSUyMHN0dWRlbnR8ZW58MHx8fHwxNzU5MTIwNTMyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "happy student"
+    },
+    {
+      "id": "testimonial-2",
+      "description": "Portrait of another happy student",
+      "imageUrl": "https://images.unsplash.com/photo-1631131426242-0abfa7f209c2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxzbWlsaW5nJTIwc3R1ZGVudHxlbnwwfHx8fDE3NTkxMTQ2NDR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "smiling student"
+    },
+    {
+      "id": "testimonial-3",
+      "description": "Portrait of a third happy student",
+      "imageUrl": "https://images.unsplash.com/photo-1564991855112-0b8268916541?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxncmFkdWF0ZSUyMHN0dWRlbnR8ZW58MHx8fHwxNzU5MjI1NDI4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "graduate student"
+    }
+  ]
 }
