@@ -110,11 +110,11 @@ export default function EnrollmentForm() {
   };
 
   if (!isClient) {
-    return <Card><CardHeader><Progress value={0} /></CardHeader><CardContent><div className="h-96"></div></CardContent></Card>;
+    return <Card className="shadow-lg"><CardHeader><Progress value={0} /></CardHeader><CardContent><div className="h-96"></div></CardContent></Card>;
   }
 
   return (
-    <Card>
+    <Card className="shadow-lg transition-all duration-300 hover:shadow-2xl">
       <CardHeader>
         <CardTitle>Enrollment Form</CardTitle>
         <CardDescription>Step {step} of {steps.length}: {steps[step - 1].title}</CardDescription>
@@ -180,7 +180,7 @@ export default function EnrollmentForm() {
                     <FormItem>
                         <FormLabel>Upload Documents</FormLabel>
                         <FormControl>
-                          <label htmlFor="file-upload" className="relative flex justify-center w-full h-32 px-6 pt-5 pb-6 border-2 border-dashed rounded-md cursor-pointer hover:border-primary">
+                          <label htmlFor="file-upload" className="relative flex justify-center w-full h-32 px-6 pt-5 pb-6 border-2 border-dashed rounded-md cursor-pointer transition-colors duration-300 hover:border-primary hover:bg-primary/5">
                             <div className="space-y-1 text-center">
                               <UploadCloud className="w-12 h-12 mx-auto text-muted-foreground" />
                               <div className="flex text-sm text-muted-foreground">
@@ -207,15 +207,15 @@ export default function EnrollmentForm() {
             )}
 
             <div className="flex justify-between pt-4">
-              <Button type="button" variant="outline" onClick={handleBack} disabled={step === 1}>
+              <Button type="button" variant="outline" onClick={handleBack} disabled={step === 1} className="transition-transform duration-300 hover:scale-105">
                 Back
               </Button>
               {step < steps.length ? (
-                <Button type="button" onClick={handleNext}>
+                <Button type="button" onClick={handleNext} className="transition-transform duration-300 hover:scale-105">
                   Next
                 </Button>
               ) : (
-                <Button type="submit" className="bg-accent text-accent-foreground hover:bg-accent/90">
+                <Button type="submit" className="bg-accent text-accent-foreground hover:bg-accent/90 transition-transform duration-300 hover:scale-105">
                   Submit Enrollment
                 </Button>
               )}

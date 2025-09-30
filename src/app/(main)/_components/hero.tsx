@@ -33,7 +33,7 @@ export default function Hero() {
         <div className="absolute inset-0 bg-black/40" />
       </div>
       <div className="container relative z-10 flex h-full items-center justify-center text-center">
-        <div className="max-w-3xl text-white">
+        <div className="max-w-3xl text-white animate-fade-in-up">
           <h1 className="font-headline text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl">
             Transform Your Academic Journey
           </h1>
@@ -41,10 +41,10 @@ export default function Hero() {
             Discover your potential with personalized tutoring from world-class experts. We're dedicated to your success.
           </p>
           <div className="mt-10 flex items-center justify-center gap-x-6">
-            <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90">
+            <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 transition-transform duration-300 hover:scale-105">
               <Link href="/enroll">Book a Free Trial</Link>
             </Button>
-            <Button asChild variant="outline" size="lg" className="border-white text-white hover:bg-white/10">
+            <Button asChild variant="outline" size="lg" className="border-white text-white hover:bg-white/10 transition-transform duration-300 hover:scale-105">
               <Link href="/courses">
                 View Courses <ArrowRight className="ml-2 h-5 w-5" />
               </Link>

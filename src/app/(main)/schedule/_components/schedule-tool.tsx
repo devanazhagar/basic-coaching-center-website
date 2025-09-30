@@ -58,7 +58,7 @@ export default function ScheduleTool() {
   }
 
   return (
-    <Card>
+    <Card className="shadow-lg transition-all duration-300 hover:shadow-2xl">
       <CardHeader>
         <CardTitle>Create Your Schedule</CardTitle>
         <CardDescription>Enter your preferences and let our AI do the planning.</CardDescription>
@@ -105,7 +105,7 @@ export default function ScheduleTool() {
                 </FormItem>
               )}
             />
-            <Button type="submit" disabled={isLoading} className="w-full bg-accent text-accent-foreground hover:bg-accent/90">
+            <Button type="submit" disabled={isLoading} className="w-full bg-accent text-accent-foreground hover:bg-accent/90 transition-transform duration-300 hover:scale-105">
               {isLoading ? (
                 <>
                   <Loader2 className="mr-2 h-4 w-4 animate-spin" />
@@ -126,7 +126,7 @@ export default function ScheduleTool() {
             <Textarea
                 readOnly
                 value={schedule}
-                className="mt-2 h-48 whitespace-pre-wrap font-mono bg-muted"
+                className="mt-2 h-48 whitespace-pre-wrap font-mono bg-muted shadow-inner"
             />
           </div>
         )}

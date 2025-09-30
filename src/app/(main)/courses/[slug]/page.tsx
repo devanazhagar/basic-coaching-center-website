@@ -30,7 +30,7 @@ export default function CourseDetailPage({ params }: { params: { slug: string } 
           />
         )}
         <div className="container relative flex h-full items-end pb-8">
-            <h1 className="font-headline text-4xl font-bold text-white">{course.title}</h1>
+            <h1 className="font-headline text-4xl font-bold text-white drop-shadow-lg">{course.title}</h1>
         </div>
       </div>
 
@@ -42,15 +42,15 @@ export default function CourseDetailPage({ params }: { params: { slug: string } 
             <h3 className="font-headline mt-8 text-xl font-bold">Curriculum</h3>
             <ul className="mt-4 space-y-2">
               {course.curriculum.map((item, index) => (
-                <li key={index} className="flex items-center">
-                  <CheckCircle className="mr-2 h-5 w-5 text-green-500" />
+                <li key={index} className="flex items-center transition-all duration-300 hover:translate-x-1">
+                  <CheckCircle className="mr-2 h-5 w-5 text-green-500 flex-shrink-0" />
                   <span>{item}</span>
                 </li>
               ))}
             </ul>
           </div>
           <div>
-            <Card className="sticky top-24">
+            <Card className="sticky top-24 shadow-lg transition-all duration-300 hover:shadow-2xl">
                 <CardContent className="p-6">
                     <div className="space-y-4">
                         <div className="flex items-center">
@@ -69,7 +69,7 @@ export default function CourseDetailPage({ params }: { params: { slug: string } 
                             <Badge variant="secondary">Grades {course.grade}</Badge>
                         </div>
                     </div>
-                    <Button asChild size="lg" className="w-full mt-6 bg-accent text-accent-foreground hover:bg-accent/90">
+                    <Button asChild size="lg" className="w-full mt-6 bg-accent text-accent-foreground hover:bg-accent/90 transition-transform duration-300 hover:scale-105">
                         <Link href="/enroll">Enroll Now</Link>
                     </Button>
                 </CardContent>

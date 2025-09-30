@@ -52,7 +52,7 @@ export default function Stats() {
       <div className="container">
         <div className="grid grid-cols-1 gap-y-12 md:grid-cols-3 md:gap-x-8">
           {stats.map((stat, index) => (
-            <div key={index} className="flex flex-col items-center text-center">
+            <div key={index} className="flex flex-col items-center text-center p-8 rounded-lg transition-all duration-300 hover:shadow-2xl hover:scale-105 hover:bg-background">
               <stat.icon className="h-12 w-12 text-primary" />
               <div className="mt-4 text-4xl font-bold tracking-tight text-foreground">
                 {inView ? <AnimatedCounter to={stat.value} /> : 0}

@@ -13,17 +13,19 @@ export default function FacultyCard({ member }: FacultyCardProps) {
   const image = PlaceHolderImages.find(p => p.id === member.image);
 
   return (
-    <Card className="text-center transition-all hover:shadow-lg hover:-translate-y-1">
+    <Card className="text-center transition-all duration-300 hover:shadow-2xl hover:-translate-y-2">
       <CardHeader className="items-center pb-4">
         {image && (
-          <Image
-            src={image.imageUrl}
-            alt={member.name}
-            width={128}
-            height={128}
-            className="rounded-full border-4 border-primary/20"
-            data-ai-hint={image.imageHint}
-          />
+          <div className="relative">
+            <Image
+              src={image.imageUrl}
+              alt={member.name}
+              width={128}
+              height={128}
+              className="rounded-full border-4 border-primary/20 transition-all duration-300 group-hover:border-primary"
+              data-ai-hint={image.imageHint}
+            />
+          </div>
         )}
       </CardHeader>
       <CardContent>
@@ -32,7 +34,7 @@ export default function FacultyCard({ member }: FacultyCardProps) {
         <p className="mt-4 text-sm text-muted-foreground">{member.qualifications}</p>
         <div className="mt-4 flex flex-wrap justify-center gap-2">
           {member.specialization.split(', ').map(spec => (
-            <Badge key={spec} variant="secondary">{spec}</Badge>
+            <Badge key={spec} variant="secondary" className="transition-colors duration-300 hover:bg-primary hover:text-primary-foreground">{spec}</Badge>
           ))}
         </div>
         <div className="mt-4 flex justify-center items-center gap-4 text-sm text-muted-foreground">

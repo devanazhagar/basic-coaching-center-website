@@ -36,7 +36,7 @@ export default function Testimonials() {
               return (
                 <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
                   <div className="p-4 h-full">
-                    <Card className="h-full">
+                    <Card className="h-full shadow-lg transition-all duration-300 hover:shadow-2xl hover:scale-105">
                       <CardContent className="flex h-full flex-col items-center justify-center p-6 text-center">
                         {image && (
                           <Image

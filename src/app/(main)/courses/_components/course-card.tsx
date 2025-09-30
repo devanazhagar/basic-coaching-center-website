@@ -14,15 +14,15 @@ export default function CourseCard({ course }: CourseCardProps) {
   const image = PlaceHolderImages.find(p => p.id === course.image);
 
   return (
-    <Card className="flex flex-col overflow-hidden transition-all hover:shadow-lg hover:-translate-y-1">
+    <Card className="flex flex-col overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-2">
       <CardHeader className="p-0">
-        <div className="relative h-48 w-full">
+        <div className="relative h-48 w-full overflow-hidden">
           {image && (
             <Image
               src={image.imageUrl}
               alt={course.title}
               fill
-              className="object-cover"
+              className="object-cover transition-transform duration-300 group-hover:scale-105"
               data-ai-hint={image.imageHint}
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             />
@@ -37,7 +37,7 @@ export default function CourseCard({ course }: CourseCardProps) {
         <p className="mt-3 text-sm text-muted-foreground">{course.description}</p>
       </CardContent>
       <CardFooter className="p-6 pt-0">
-        <Button asChild className="w-full">
+        <Button asChild className="w-full transition-transform duration-300 hover:scale-105">
           <Link href={`/courses/${course.id}`}>Learn More</Link>
         </Button>
       </CardFooter>
