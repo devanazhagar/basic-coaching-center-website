@@ -53,9 +53,9 @@ const chatFlow = ai.defineFlow(
   },
   async (prompt) => {
     const llmResponse = await ai.generate({
-      model: 'googleai/gemini-2.5-flash',
       prompt: prompt,
       system: systemInstruction,
+      model: 'googleai/gemini-2.5-flash',
       config: {
         // Using OpenRouter for this specific flow
         client: {
