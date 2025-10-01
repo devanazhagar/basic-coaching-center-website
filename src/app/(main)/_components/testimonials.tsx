@@ -29,7 +29,7 @@ export default function Testimonials() {
             Success Stories from Our Students
           </h2>
           <p className="mt-4 max-w-2xl mx-auto text-lg leading-8 text-muted-foreground">
-            See how we've made a difference in the lives of students just like you.
+            See how we&apos;ve made a difference in the lives of students just like you.
           </p>
         </motion.div>
         <Carousel
@@ -73,7 +73,7 @@ export default function Testimonials() {
                           ))}
                         </div>
                         <blockquote className="mt-2 text-sm text-muted-foreground italic">
-                          "{testimonial.text}"
+                          &quot;{testimonial.text}&quot;
                         </blockquote>
                       </CardContent>
                     </Card>
