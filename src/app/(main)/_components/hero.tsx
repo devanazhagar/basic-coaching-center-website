@@ -1,6 +1,6 @@
 "use client";
 import { Button } from "@/components/ui/button";
-import { ChevronRight, Home } from "lucide-react";
+import { ChevronRight } from "lucide-react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
@@ -69,7 +69,6 @@ export default function Hero() {
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
           <div className="flex items-center text-sm mb-4">
-            <Home className="w-4 h-4 mr-2" />
             <ChevronRight className="w-4 h-4 mr-2" />
             <span>Academify</span>
           </div>
@@ -87,7 +86,7 @@ export default function Hero() {
             <Button asChild size="lg" className="bg-slate-900 text-white hover:bg-slate-800 transition-transform duration-300 hover:scale-105">
               <Link href="/enroll">Book a Free Trial <ChevronRight className="ml-2 h-5 w-5" /></Link>
             </Button>
-            <Button asChild variant="outline" size="lg" className="border-white text-white hover:bg-white/10 transition-transform duration-300 hover:scale-105">
+            <Button asChild size="lg" className="bg-slate-900 text-white hover:bg-slate-800 transition-transform duration-300 hover:scale-105">
               <Link href="/courses">
                 Download Brochure
               </Link>
