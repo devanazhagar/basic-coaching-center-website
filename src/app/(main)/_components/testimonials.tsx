@@ -10,19 +10,26 @@ import { testimonials } from "@/lib/data";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import Image from "next/image";
 import { Star } from "lucide-react";
+import { motion } from "framer-motion";
 
 export default function Testimonials() {
   return (
     <section className="py-20 sm:py-24">
       <div className="container">
-        <div className="text-center">
+        <motion.div 
+          className="text-center"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ duration: 0.5 }}
+        >
           <h2 className="font-headline text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
             Success Stories from Our Students
           </h2>
           <p className="mt-4 max-w-2xl mx-auto text-lg leading-8 text-muted-foreground">
             See how we've made a difference in the lives of students just like you.
           </p>
-        </div>
+        </motion.div>
         <Carousel
           opts={{
             align: "start",
@@ -35,7 +42,13 @@ export default function Testimonials() {
               const image = PlaceHolderImages.find(p => p.id === testimonial.image);
               return (
                 <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
-                  <div className="p-4 h-full">
+                  <motion.div 
+                    className="p-4 h-full"
+                    initial={{ opacity: 0, scale: 0.95 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    viewport={{ once: true, amount: 0.5 }}
+                    transition={{ duration: 0.5, delay: index * 0.1 }}
+                  >
                     <Card className="h-full shadow-lg transition-all duration-300 hover:shadow-2xl hover:scale-105 bg-card backdrop-blur-sm">
                       <CardContent className="flex h-full flex-col items-center justify-center p-6 text-center">
                         {image && (
@@ -62,7 +75,7 @@ export default function Testimonials() {
                         </blockquote>
                       </CardContent>
                     </Card>
-                  </div>
+                  </motion.div>
                 </CarouselItem>
               );
             })}

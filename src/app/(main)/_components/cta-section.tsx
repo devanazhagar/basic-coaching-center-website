@@ -1,11 +1,18 @@
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 export default function CtaSection() {
   return (
     <section className="py-20 sm:py-24">
       <div className="container">
-        <div className="relative isolate overflow-hidden bg-primary/10 px-6 py-24 text-center shadow-2xl sm:rounded-3xl sm:px-16 transition-all duration-300 hover:shadow-2xl hover:scale-[1.01]">
+        <motion.div 
+          className="relative isolate overflow-hidden bg-primary/10 px-6 py-24 text-center shadow-2xl sm:rounded-3xl sm:px-16 transition-all duration-300 hover:shadow-2xl hover:scale-[1.01]"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+        >
           <h2 className="font-headline mx-auto max-w-2xl text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
             Ready to Unlock Your Full Potential?
           </h2>
@@ -20,7 +27,7 @@ export default function CtaSection() {
               <Link href="/schedule">Create a Schedule</Link>
             </Button>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

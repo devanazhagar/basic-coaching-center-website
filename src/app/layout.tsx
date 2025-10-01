@@ -18,6 +18,9 @@ const fontSerif = Lora({
 export const metadata: Metadata = {
   title: 'Academify - Transforming Academic Journeys',
   description: 'Personalized tutoring and coaching to help students achieve their academic goals.',
+  icons: {
+    icon: '/favicon.svg',
+  },
 };
 
 export default function RootLayout({
@@ -34,5 +37,3 @@ export default function RootLayout({
     </html>
   );
 }
-
-    

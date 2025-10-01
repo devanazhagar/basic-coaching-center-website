@@ -1,8 +1,9 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
-import { useInView } from "react-intersection-observer";
+import { useRef } from "react";
+import { useInView } from "framer-motion";
 import { GraduationCap, BookOpen, Star } from "lucide-react";
+import AnimatedCounter from "./animated-counter";
 
 const stats = [
   { value: 5000, label: "Students Taught", icon: GraduationCap },
@@ -10,42 +11,10 @@ const stats = [
   { value: 10, label: "Years of Experience", icon: BookOpen, suffix: "+" },
 ];
 
-function AnimatedCounter({ to, duration = 2000 }: {to: number, duration?: number}) {
-  const [count, setCount] = useState(0);
-  const startTime = useRef<number | null>(null);
-  const frameRef = useRef<number | null>(null);
-
-  const animate = (timestamp: number) => {
-    if (!startTime.current) {
-      startTime.current = timestamp;
-    }
-    const progress = timestamp - startTime.current;
-    const percentage = Math.min(progress / duration, 1);
-    const newCount = Math.floor(to * percentage);
-    setCount(newCount);
-
-    if (progress < duration) {
-      frameRef.current = requestAnimationFrame(animate);
-    }
-  };
-  
-  useEffect(() => {
-    frameRef.current = requestAnimationFrame(animate);
-    return () => {
-      if(frameRef.current) {
-        cancelAnimationFrame(frameRef.current);
-      }
-    }
-  }, [to, duration]);
-
-  return <span>{count}</span>;
-}
 
 export default function Stats() {
-  const { ref, inView } = useInView({
-    triggerOnce: true,
-    threshold: 0.5,
-  });
+  const ref = useRef(null);
+  const inView = useInView(ref, { once: true, amount: 0.5 });
 
   return (
     <section ref={ref} className="py-20 sm:py-24">
