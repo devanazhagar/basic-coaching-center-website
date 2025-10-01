@@ -7,7 +7,6 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import type { courses } from "@/lib/data";
-import { motion } from "framer-motion";
 
 type CourseCardProps = {
   course: (typeof courses)[0];
@@ -17,12 +16,6 @@ export default function CourseCard({ course }: CourseCardProps) {
   const image = PlaceHolderImages.find(p => p.id === course.image);
 
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, amount: 0.3 }}
-      transition={{ duration: 0.5 }}
-    >
       <Card className="flex flex-col overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 h-full">
         <CardHeader className="p-0">
           <div className="relative h-48 w-full overflow-hidden">
@@ -51,6 +44,5 @@ export default function CourseCard({ course }: CourseCardProps) {
           </Button>
         </CardFooter>
       </Card>
-    </motion.div>
   );
 }
